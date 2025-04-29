@@ -1,9 +1,8 @@
-from behavior.fly import FlyBehavior, FlyNoWay
-from behavior.quack import QuackBehavior, Squeak
-from duck.base_duck import Duck
+from behavior import FlyBehavior, FlyNoWay, QuackBehavior, Squeak
+from duck import BaseDuck
 
 
-class RubberDuck(Duck):
+class RubberDuck(BaseDuck):
     def __init__(self, fb: FlyBehavior = FlyNoWay(), qb: QuackBehavior = Squeak()):
         super()
         self.fly_behavior = fb

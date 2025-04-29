@@ -1,10 +1,9 @@
 from abc import abstractmethod
 
-from behavior.fly import FlyBehavior
-from behavior.quack import QuackBehavior
+from behavior import FlyBehavior, QuackBehavior
 
 
-class Duck():
+class BaseDuck():
 
     def __init__(self, fb: FlyBehavior, qb: QuackBehavior):
         self.fly_behavior: FlyBehavior = fb

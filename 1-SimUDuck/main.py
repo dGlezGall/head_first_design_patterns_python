@@ -1,7 +1,5 @@
-from behavior.fly import FlyBehavior, FlyRocketPowered
-from duck.decoy_duck import DecoyDuck
-from duck.mallard_duck import MallardDuck
-from duck.rubber_duck import RubberDuck
+from behavior import FlyBehavior, FlyRocketPowered
+from duck import DecoyDuck, MallardDuck, RubberDuck
 
 
 if __name__ == "__main__":

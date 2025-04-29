@@ -1,9 +1,8 @@
-from behavior.fly import FlyBehavior, FlyWithWings
-from behavior.quack import QuackBehavior, Quack
-from duck.base_duck import Duck
+from behavior import FlyBehavior, FlyWithWings, QuackBehavior, Quack
+from duck import BaseDuck
 
 
-class MallardDuck(Duck):
+class MallardDuck(BaseDuck):
 
     def __init__(self, fb: FlyBehavior = FlyWithWings(), qb: QuackBehavior = Quack()):
         super()
