@@ -1,9 +1,9 @@
-from behavior import FlyBehavior, FlyNoWay, QuackBehavior, MuteQuack
+from behavior import Fly, FlyNoWay, Quack, MuteQuack
 from .duck import Duck
 
 
 class DecoyDuck(Duck):
-    def __init__(self, fb: FlyBehavior = FlyNoWay(), qb: QuackBehavior = MuteQuack()):
+    def __init__(self, fb: Fly = FlyNoWay(), qb: Quack = MuteQuack()):
         super().__init__(fb, qb)
 
     def display(self):

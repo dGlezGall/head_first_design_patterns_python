@@ -1,6 +1,6 @@
-from ..quack_behavior import QuackBehavior
+from ..quack import Quack
 
 
-class MuteQuack(QuackBehavior):
+class MuteQuack(Quack):
     def quack(self):
         print("...")

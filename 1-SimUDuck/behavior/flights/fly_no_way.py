@@ -1,6 +1,6 @@
-from ..fly_behavior import FlyBehavior
+from ..fly import Fly
 
 
-class FlyNoWay(FlyBehavior):
+class FlyNoWay(Fly):
     def fly(self):
         print("I can't fly! :(")

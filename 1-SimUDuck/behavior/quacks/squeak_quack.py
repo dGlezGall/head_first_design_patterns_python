@@ -1,6 +1,6 @@
-from ..quack_behavior import QuackBehavior
+from ..quack import Quack
 
 
-class SqueakQuack(QuackBehavior):
+class SqueakQuack(Quack):
     def quack(self):
         print("Squeak!")

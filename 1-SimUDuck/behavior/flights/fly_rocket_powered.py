@@ -1,6 +1,6 @@
-from ..fly_behavior import FlyBehavior
+from ..fly import Fly
 
 
-class FlyRocketPowered(FlyBehavior):
+class FlyRocketPowered(Fly):
     def fly(self):
         print("I am flying on A ROCKET! :D")

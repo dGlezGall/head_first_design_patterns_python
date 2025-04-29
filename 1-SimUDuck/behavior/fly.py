@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 
-class FlyBehavior(ABC):
+class Fly(ABC):
     @abstractmethod
     def fly(self):
         pass
