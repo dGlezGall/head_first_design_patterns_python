@@ -1,7 +1,9 @@
-from .fly import FlyBehavior, FlyNoWay, FlyRocketPowered, FlyWithWings
-from .quack import QuackBehavior, MuteQuack, Squeak, Quack
+from .fly_behavior import FlyBehavior
+from .flights import FlyNoWay, FlyRocketPowered, FlyWithWings
+from .quack_behavior import QuackBehavior
+from .quacks import MuteQuack, SqueakQuack, NormalQuack
 
 __all__ = [
     'FlyBehavior', 'FlyNoWay', 'FlyRocketPowered', 'FlyWithWings',
-    'QuackBehavior', 'MuteQuack', 'Squeak', 'Quack'
+    'QuackBehavior', 'MuteQuack', 'SqueakQuack', 'NormalQuack'
 ]
