@@ -20,7 +20,7 @@ py -3.12 ./main.py
 |   ├── quack.py      # Quack interface
 |   └── quacks/       # Quacking behaviors strategies
 |
-├── duck/             # Duck implementations
+├── ducks/            # Duck interface and it's implementations
 └── main.py
 ```
 
@@ -32,7 +32,7 @@ This example demonstrates several key design principles:
 2. **Strategy Pattern**: The example implements the Strategy Pattern, which enables selecting algorithms at runtime. Here, flying and quacking behaviors can be changed dynamically.
 
 3. **Programming to Interfaces**: The code demonstrates the principle of programming to interfaces, not implementations:
-   - [`Duck`](./duck/duck.py) is an abstract base class (interface) that concrete ducks implement
+   - [`Duck`](./ducks/duck.py) is an abstract base class (interface) that concrete ducks implement
    - [`Fly`](./behavior/fly.py) and [`Quack`](./behavior/quack.py) are interfaces for behaviors
    - Concrete behaviors (like [`FlyWithWings`](./behavior/flights/fly_with_wings.py), [`NormalQuack`](./behavior/quacks/normal_quack.py)) implement these interfaces
 

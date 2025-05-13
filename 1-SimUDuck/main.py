@@ -1,5 +1,5 @@
 from behavior import Fly, FlyRocketPowered
-from duck import DecoyDuck, MallardDuck, RubberDuck
+from ducks import DecoyDuck, MallardDuck, RubberDuck
 
 
 if __name__ == "__main__":
