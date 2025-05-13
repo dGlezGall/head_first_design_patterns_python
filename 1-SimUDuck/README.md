@@ -13,12 +13,12 @@ py -3.12 ./main.py
 
 ```
 1-SimUDuck/
-├── behavior/
+├── strategies/
 |   ├── fly.py        # Fly interface
-|   ├── flights/      # Flying behaviors strategies
+|   ├── flights/      # Flying strategies implementations
 |   |
 |   ├── quack.py      # Quack interface
-|   └── quacks/       # Quacking behaviors strategies
+|   └── quacks/       # Quacking strategies implementations
 |
 ├── ducks/            # Duck interface and it's implementations
 └── main.py
@@ -27,14 +27,14 @@ py -3.12 ./main.py
 ## Insights
 This example demonstrates several key design principles:
 
-1. **Dynamic Behavior Changes**: Open [./main.py](./main.py) and check how the `RubberDuck` changes its flying behavior at runtime.
+1. **Dynamic Behavior Changes**: Run the example, check [./main.py](./main.py) and see how the `RubberDuck` changes its flying behavior at runtime.
 
 2. **Strategy Pattern**: The example implements the Strategy Pattern, which enables selecting algorithms at runtime. Here, flying and quacking behaviors can be changed dynamically.
 
 3. **Programming to Interfaces**: The code demonstrates the principle of programming to interfaces, not implementations:
    - [`Duck`](./ducks/duck.py) is an abstract base class (interface) that concrete ducks implement
-   - [`Fly`](./behavior/fly.py) and [`Quack`](./behavior/quack.py) are interfaces for behaviors
-   - Concrete behaviors (like [`FlyWithWings`](./behavior/flights/fly_with_wings.py), [`NormalQuack`](./behavior/quacks/normal_quack.py)) implement these interfaces
+   - [`FlyStrategy`](./strategies/fly.py) and [`QuackStrategy`](./strategies/quack.py) are interfaces for behaviors
+   - Concrete strategies (like [`FlyWithWings`](./strategies/flights/fly_with_wings.py), [`NormalQuack`](./strategies/quacks/normal_quack.py)) implement these interfaces
 
 4. **Composition over Inheritance**: Instead of using inheritance to define duck behaviors, we use composition by injecting behavior objects. This makes the system more flexible and behaviors interchangeable.
 

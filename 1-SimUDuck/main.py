@@ -1,4 +1,4 @@
-from behavior import Fly, FlyRocketPowered
+from strategies import FlyStrategy, FlyRocketPowered
 from ducks import DecoyDuck, MallardDuck, RubberDuck
 
 
@@ -28,6 +28,6 @@ if __name__ == "__main__":
     rubber.swim()
     rubber.perform_quack()
     rubber.perform_fly()
-    fly_with_rocket: Fly = FlyRocketPowered()
-    rubber.set_fly_behavior(fly_with_rocket)
+    fly_with_rocket: FlyStrategy = FlyRocketPowered()
+    rubber.set_fly_strategy(fly_with_rocket)
     rubber.perform_fly()
