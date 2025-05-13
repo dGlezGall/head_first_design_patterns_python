@@ -10,3 +10,6 @@ mkdir ./dGlezGall/ && cd ./dGlezGall/
 git clone https://www.github.com/dGlezGall/head_first_design_patterns_python
 cd ./head_first_design_patterns_python
 ```
+
+## Patterns / Chapters / Parts / Apps
+1. [SimUDuck](1-SimUDuck/README.md) (Strategy Pattern)
